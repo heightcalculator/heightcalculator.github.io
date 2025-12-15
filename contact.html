@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Height Calculator | Get in Touch</title>
+    <meta name="description" content="Contact Height Calculator for support, feedback, or inquiries. We're here to help with all your height calculation needs.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+            padding: 100px 0 60px;
+            border-bottom: 5px solid #1A1A1A;
+        }
+        .page-title {
+            font-size: 56px;
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-section {
+            padding: 80px 0;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 40px;
+            border: 5px solid #1A1A1A;
+            box-shadow: 10px 10px 0 #1A1A1A;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 3px solid #1A1A1A;
+            font-size: 16px;
+            background: #F7F7F7;
+        }
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: #FF6B35;
+            color: #fff;
+            border: 5px solid #1A1A1A;
+            font-size: 18px;
+            font-weight: 900;
+            cursor: pointer;
+            box-shadow: 6px 6px 0 #1A1A1A;
+            transition: all 0.3s ease;
+        }
+        .submit-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 #1A1A1A;
+        }
+        .contact-info-box {
+            background: #FFE66D;
+            padding: 40px;
+            border: 5px solid #1A1A1A;
+            box-shadow: 10px 10px 0 #1A1A1A;
+        }
+        @media (max-width: 768px) {
+            .contact-grid { grid-template-columns: 1fr; }
+            .page-title { font-size: 36px; }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="8" fill="#FF6B35"/>
+                        <path d="M20 8V32M14 14H26M14 26H26" stroke="white" stroke-width="3" stroke-linecap="round"/>
+                    </svg>
+                    <span>Height<strong>Calculator</strong></span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#features">Features</a>
+                    <a href="index.html#faq">FAQ</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-intro">Have questions or feedback? We'd love to hear from you!</p>
+        </div>
+    </div>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h2 style="font-size: 32px; font-weight: 900; margin-bottom: 30px;">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name *</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">SEND MESSAGE</button>
+                    </form>
+                </div>
+
+                <div>
+                    <div class="contact-info-box" style="margin-bottom: 30px;">
+                        <h3 style="font-size: 24px; font-weight: 900; margin-bottom: 20px;">Contact Information</h3>
+                        <div style="display: flex; flex-direction: column; gap: 20px;">
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.26C11.5423 13.6728 12.4577 13.6728 13.11 13.26L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z" stroke="#1A1A1A" stroke-width="2"/>
+                                </svg>
+                                <div>
+                                    <div style="font-weight: 700; margin-bottom: 5px;">Email</div>
+                                    <a href="mailto:info@heightcalculator.com" style="color: #1A1A1A;">info@heightcalculator.com</a>
+                                </div>
+                            </div>
+                            <div style="display: flex; align-items: center; gap: 15px;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="#1A1A1A" stroke-width="2"/>
+                                    <path d="M12 21C16 17 20 13.4183 20 10C20 5.58172 16.4183 2 12 2C7.58172 2 4 5.58172 4 10C4 13.4183 8 17 12 21Z" stroke="#1A1A1A" stroke-width="2"/>
+                                </svg>
+                                <div>
+                                    <div style="font-weight: 700; margin-bottom: 5px;">Location</div>
+                                    <span style="color: #1A1A1A;">Online Service Worldwide</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-box" style="background: #4ECDC4;">
+                        <h3 style="font-size: 24px; font-weight: 900; margin-bottom: 15px;">Quick Support</h3>
+                        <p style="line-height: 1.6; margin-bottom: 20px;">For immediate answers, check out our FAQ section or try the calculator again. Most questions can be resolved instantly!</p>
+                        <a href="index.html#faq" style="display: inline-block; padding: 12px 25px; background: #1A1A1A; color: #fff; text-decoration: none; font-weight: 700; border: 3px solid #1A1A1A; box-shadow: 4px 4px 0 rgba(0,0,0,0.2);">VIEW FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-widget">
+                    <h3>About Height Calculator</h3>
+                    <p>Your trusted free online tool for instant height conversions and calculations.</p>
+                </div>
+                <div class="footer-widget">
+                    <h3>Pages</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-use.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Height Calculator. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
